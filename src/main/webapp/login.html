@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+
+<style>
+
+*{
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body{
+    background-color: #f1f3f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.container{
+
+    background-color: white;
+    width: 500px;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.15);
+
+}
+
+
+h2{
+
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+
+}
+
+
+label{
+
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+
+input{
+
+    width: 100%;
+    padding: 14px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 16px;
+
+}
+
+
+input:focus{
+
+    outline: none;
+    border-color: #0757b8;
+
+}
+
+
+button{
+
+    width: 100%;
+    padding: 15px;
+    background-color: #0757b8;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+
+button:hover{
+
+    background-color: #004494;
+
+}
+
+
+.register{
+
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+
+}
+
+
+.register a{
+
+    color: #0757b8;
+    text-decoration: none;
+
+}
+
+
+.register a:hover{
+
+    text-decoration: underline;
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<h2>Login</h2>
+
+
+<form action="LoginServlet" method="post">
+
+
+<label>Email</label>
+
+<input type="email" name="email" placeholder="Enter your email" required>
+
+
+
+<label>Password</label>
+
+<input type="password" name="password" placeholder="Enter your password" required>
+
+
+
+<button type="submit">Login</button>
+
+
+<div class="register">
+
+    Don't have an account?
+    <a href="register.html">Register</a>
+
+</div>
+
+
+</form>
+
+
+</div>
+
+
+</body>
+</html>
